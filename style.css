@@ -1,0 +1,110 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile-first styles */
+:root {
+--font_family: 'Inter', sans-serif;
+--font_size: 16px;
+--background_color: #000000;
+--background_image: url("wallpaper.jpg");
+--image_border_color: #ff0000;
+--image_border_px: 3px;
+--image_width: 140px;
+--image_height: 140px;
+--title_color: #ffffff;
+--description_color: #c4c4c4;
+--svg_color: #f86300;
+--footer_background_color: #000000;
+--footer_text_color: #000000;
+--footer_link_text_color: #e04f4f;
+}
+
+section {
+flex: 5;
+max-width: 800px;
+margin: 28px auto;
+padding: 4em;
+background-color: rgba(36, 35, 35, 0.88);
+box-shadow: 5px 6px 12px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+}
+
+body {
+font: var(--font_size) var(--font_family);
+font-weight: 600;
+line-height: 1.8;
+background: var(--background_color) var(--background_image) no-repeat center;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+/*disable scroling   */
+overflow-x: hidden;
+/*disable selection */
+user-select: none;
+-webkit-user-select: none; /* Safari/Chrome */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+/* About section styles */
+.flex_column_center {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+/* Logo section styles */
+.flex_row_center {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.flex_no_wrap_row_center {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+}
+
+/* Logo, Title, and Description styles */
+.header_img {
+padding-top: 1em;
+}
+.header_text h1 {
+color: var(--title_color);
+font-size: 2.5em;
+margin-bottom: 0.5em;
+}
+.header_text h2 {
+color: var(--description_color);
+font-size: 1em;
+text-align: center;
+}
+
+/* Social Media Icons styles */
+.header_svg_list {
+padding-top: 2em;
+}
+.header_svg_item {
+width: 3.5em;
+height: 3.5em;
+cursor: pointer;
+margin: 0.5em;
+}
+.header_svg_item svg {
+fill: var(--svg_color);
+}
+
+/* Footer styles */
+footer {
+text-align: center;
+}
+  /* end of the css code  why u still her xD*/
